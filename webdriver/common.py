@@ -3,7 +3,7 @@ from typing import TypeVar, Optional, Callable, Union
 
 
 _function = TypeVar("_function", bound=Callable[..., object])
-_exceptions = TypeVar("_exceptions", bound=Optional[Union[type, tuple, list]])
+_exceptions = TypeVar("_exceptions", bound=Optional[Union[Exception, tuple[Exception], list[Exception]]])
 
 default_exception = None
 
